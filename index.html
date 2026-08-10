@@ -143,5 +143,90 @@
     </table>
 
     <hr>
+        <h2>Interactive Form Controls</h2>
+
+    <form action="#" method="post">
+
+        <label for="fullName">Full Name (Text Input):</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="John Doe">
+
+        <br><br>
+
+        <label for="password">Password (Password Input):</label><br>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+        <label for="email">Email Address (Email Input):</label><br>
+        <input type="email" id="email" name="email" placeholder="student@example.com">
+
+        <br><br>
+
+        <label for="age">Age (Number Input):</label><br>
+        <input type="number" id="age" name="age" value="20">
+
+        <br><br>
+
+        <span>Gender (Radio Input):</span><br>
+
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <span>Topics (Checkbox Input):</span><br>
+
+        <input type="checkbox" id="web" name="topics" value="web" checked>
+        <label for="web">Web Development</label><br>
+
+        <input type="checkbox" id="databases" name="topics" value="databases">
+        <label for="databases">Databases</label>
+
+        <br><br>
+
+        <label for="browser">Preferred Browser (Input List):</label><br>
+
+        <input type="text" id="browser" name="browser" list="browsers">
+
+        <datalist id="browsers">
+            <option value="brave">
+            <option value="chrome">
+            <option value="firefox">
+        </datalist>
+
+        <br><br>
+
+        <label for="academicLevel">Academic Level (Select):</label><br>
+
+        <select id="academicLevel" name="academicLevel">
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="doctorate">Doctorate</option>
+        </select>
+
+        <br><br>
+
+        <label for="feedback">Feedback (Textarea):</label><br>
+
+        <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            cols="65"
+            placeholder="Enter feedback here..."
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+    <hr>
+    
 </body>
 </html>
